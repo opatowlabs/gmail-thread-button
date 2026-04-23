@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Gmail Thread Button</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      max-width: 680px;
+      margin: 60px auto;
+      padding: 0 24px 80px;
+      color: #202124;
+      line-height: 1.7;
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 4px; }
+    h2 { font-size: 1.05rem; margin-top: 2.2em; margin-bottom: 0.4em; }
+    .meta { color: #5f6368; font-size: 0.9rem; margin-bottom: 2.4em; }
+    p { margin: 0 0 1em; }
+    a { color: #1a237e; }
+  </style>
+</head>
+<body>
+
+  <h1>Privacy Policy</h1>
+  <p class="meta">Gmail Thread Button &nbsp;·&nbsp; Opatow LLC &nbsp;·&nbsp; Last updated: April 2026</p>
+
+  <h2>Overview</h2>
+  <p>
+    Gmail Thread Button ("the extension") is published by Opatow LLC. It adds a single toggle
+    button to Gmail that switches your inbox between threaded and unthreaded conversation view.
+    This policy describes the limited technical data the extension accesses and how it is used.
+  </p>
+
+  <h2>Data we do not collect</h2>
+  <p>
+    The extension does not collect, transmit, or store any personal information, email content,
+    account credentials, or browsing history. No data is ever sent to any server operated by
+    Opatow LLC or any third party.
+  </p>
+
+  <h2>Local storage</h2>
+  <p>
+    The extension stores a single value in your browser's local storage — the detected tonal
+    side of Gmail's current theme (<code>dark</code> or <code>light</code>). This value is used
+    only to prevent a brief white flash when Gmail reloads after saving settings. It never leaves
+    your device.
+  </p>
+
+  <h2>Screen pixel sampling</h2>
+  <p>
+    To detect whether Gmail is using a dark or light theme, the extension captures a screenshot
+    of the active Gmail tab using Chrome's <code>chrome.tabs.captureVisibleTab</code> API and
+    samples a small number of pixels from the Gmail toolbar area. The screenshot is processed
+    entirely in memory within the extension's service worker; no image data or pixel values are
+    stored to disk or transmitted anywhere. The screenshot is discarded immediately after the
+    colour values are read.
+  </p>
+
+  <h2>Permissions</h2>
+  <p>
+    The extension requests the following Chrome permissions:
+  </p>
+  <p>
+    <strong>activeTab</strong> — required to capture a screenshot of the Gmail tab for theme
+    detection as described above.
+  </p>
+  <p>
+    <strong>storage</strong> — required to persist the detected theme tone across Gmail page
+    reloads, as described under "Local storage" above.
+  </p>
+  <p>
+    Access is limited to <code>https://mail.google.com/*</code>. The extension does not run on
+    any other website.
+  </p>
+
+  <h2>Third parties</h2>
+  <p>
+    The extension does not include any third-party analytics, advertising, or tracking code.
+  </p>
+
+  <h2>Children's privacy</h2>
+  <p>
+    The extension does not knowingly collect any information from anyone, including children
+    under the age of 13.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If this policy is updated, the revised version will be published at this URL with an updated
+    date. Continued use of the extension after any change constitutes acceptance of the revised
+    policy.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy can be sent to
+    <a href="mailto:zargosh@gmail.com">zargosh@gmail.com</a>.
+  </p>
+
+</body>
+</html>
